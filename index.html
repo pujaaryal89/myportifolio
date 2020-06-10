@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portifolio</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="portifolio.css" />
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+</head>
+<body>
+  
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="#">PUJA ARYAL</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="nav-menu" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="Home">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="">About</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="">Contact</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">Welcome </h1>
+    <h3>To My Portifolio</h3>
+    <button>About Me</button>
+  </div>
+</div>
+<br/>
+<div class="container">
+  <h2 class="section-title">About me</h2>
+  <div class="line"></div>
+  <br/>
+  <div class="row">
+    <div class="col-md-4">
+      <img src="viber.jpg" class="img">
+      
+    </div>
+    <div class="col-md-8">
+      <div class="jumbotron jumbotron-fluid" style="height: 100%">
+        <H1 class="para">I am Puja Aryal</H1>
+        <p class="para">I am a CSIT student currently studying in 7th sem.I have done almost 5 projects in django.</p>
+        <p class="para"> I have keen interest in web development and web technologies.Besides coding,I love to dance,sing,travel new places.</p><br>  
+        <img class="images" src="python.png">        <img src="code.png" class="images"> 
+        <img class="images" src="travel.png">   
+        <img class="images" src="dance.png">
+        <img class="images" src="sing.png">                                
+
+
+      </div>  
+
+      
+    </div>
+    
+  </div>
+
+  
+</div>
+<br/>
+
+<a class="section-title" id="githublink">MyGithub Link</a>
+<div class="line"></div>
+<div class="flex-container">
+  <div><img class="im" src="repo.png"><br/>
+    <h3><span style="color: #a020f0">Repository : </span><span style="color: green">6</span></h3>
+  </div>
+  <div><img class="im" src="followers.png">
+    <br/>
+    <h3><span style="color:rosybrown">Followers : </span><span style="color: #f4a460">3</span></h3>
+  </div>
+  <div><img class="im" src="following.png">
+   <br/>
+    <h3><span style="color: #ff69b4">Following : </span><span style="color: #a020f0">5</span></h3>
+
+  </div>  
+
+</div>
+
+</div>
+<br/>
+<div class="container">
+  <h2 class="section-title">Contact</h2>
+<div class="line"></div>
+<form name="myform" class="form-group">
+<div class="row jumbotron rows">
+  <div class="col-md-6">
+    <label for="inputname">First name
+      <input type="text" class="form-control" placeholder="firstname">
+    </label>  
+  </div>
+    <div class="col-md-6 ">
+    <label for="inputname">last name
+      <input type="text" class="form-control" placeholder="lastname">
+    </label>  
+  </div>
+    <div class="col-md-6">
+    <label for="inputname">email
+      <input type="text" class="form-control" placeholder="email">
+    </label>  
+  </div>
+      <div class="col-md-6">
+    <label for="inputname">Phone
+      <input type="text" class="form-control" placeholder="Phone">
+    </label>  
+  </div>
+        <div class="col-md-12">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  </div>
+ <br>
+  <div class="col-md-12" style="text-align: center;">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+
+</div>
+</div>
+</form>  
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>	
+<script>
+  fetch("https://api.github.com/users/pujaaryal89")
+   .then(response => response.json())
+   .then(function(data){
+     console.log(data);
+
+     document.getElementById('githublink').href=data['html_url']
+   })
+</script>
+
+<footer class="page-footer font-small blue bg-light">
+  <div class="footer-copyright text-center py-3">2020 copyright:
+  </div>  
+</footer>  
+
+</body>
+</html>
